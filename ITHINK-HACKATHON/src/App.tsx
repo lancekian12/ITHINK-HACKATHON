@@ -8,6 +8,7 @@ import Error from './components/Error';
 import Success from './components/Success';
 import HomeLayout from './layouts/HomeLayout';
 import DashBoard from './pages/DashBoard';
+import Profile from './pages/Profile';
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
         </Route>
         <Route path="/dashboard" element={<HomeLayout/>}>
           <Route index element={<DashBoard/>}/>
-          <Route />
+          <Route path="profile" element={<Profile/>} />
         </Route>
       </Routes>
      </BrowserRouter>

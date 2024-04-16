@@ -1,9 +1,14 @@
 import { NavLink } from "react-router-dom";
 
 export const Navigation = () => {
+  // const activeStyle = {
+  //   fontWeight: "bold",
+  //   textDecoration: "underline",
+  //   color: "red",
+  // };
   return (
     <aside
-      className="w-64 h-screen bg-primary overflow-y-auto border-r-2 border-secondary"
+      className="w-64 h-screen bg-primary overflow-y-auto border-r-2 border-secondary border-opacity-70"
       aria-label="Sidebar"
     >
       <div className="h-full px-3 py-4">
@@ -17,7 +22,7 @@ export const Navigation = () => {
           </li>
           <li>
             <NavLink
-              to="/profile"
+              to="profile"
               className="flex items-center p-2 hover:bg-secondary group"
             >
               <i className="fa-solid fa-user text-secondary flex-shrink-0 w-5 h-5 group-hover:text-primary"></i>
@@ -28,7 +33,7 @@ export const Navigation = () => {
           </li>
           <li>
             <NavLink
-              to="/dashboard"
+              to=""
               className="flex items-center p-2 hover:bg-secondary group"
             >
               <svg
