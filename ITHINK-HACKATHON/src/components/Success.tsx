@@ -1,5 +1,3 @@
-import React from "react";
-
 const Success = () => {
   return (
     <div className="flex flex-col justify-center items-center border-opacity-20 border rounded-lg border-secondary w-[488px] py-12 px-8">

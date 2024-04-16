@@ -6,6 +6,7 @@ import Signup from './components/Signup';
 import Warning from './components/Warning';
 import Error from './components/Error';
 import Success from './components/Success';
+import HomeLayout from './layouts/HomeLayout';
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
           <Route path="Warning" element={<Warning/>}/>
           <Route path="Error" element={<Error/>}/>
           <Route path="Success" element={<Success/>}/>
+        </Route>
+        <Route path="/home" element={<HomeLayout/>}>
+          <Route/>
         </Route>
       </Routes>
      </BrowserRouter>

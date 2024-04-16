@@ -26,7 +26,7 @@ const Signup = () => {
         <input
           type="password"
           id="password"
-          className="bg-primary border-secondary rounded-lg border border-opacity-20 py-3 px-3 text-accent mb-3"
+          className="bg-primary border-secondary rounded-lg border border-opacity-20 py-3 px-3 text-accent mb-4"
           placeholder="Enter your password"
         />
         <label htmlFor="password" className="font-semibold my-1">
@@ -35,7 +35,7 @@ const Signup = () => {
         <input
           type="password"
           id="password"
-          className="bg-primary border-secondary rounded-lg border border-opacity-20 py-3 px-3 text-accent mb-3"
+          className="bg-primary border-secondary rounded-lg border border-opacity-20 py-3 px-3 text-accent mb-4"
           placeholder="Enter your password"
         />
         <button
