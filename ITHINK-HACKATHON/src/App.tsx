@@ -1,10 +1,18 @@
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import DefaultLayout from './layouts/DefaultLayout';
 
 function App() {
 
   return (
     <>
-     <h1 className='text-red-500 text-center'>hey</h1>
+     <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<DefaultLayout/>}>
+          
+        </Route>
+      </Routes>
+     </BrowserRouter>
     </>
   )
 }
