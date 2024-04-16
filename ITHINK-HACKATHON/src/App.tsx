@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import DefaultLayout from './layouts/DefaultLayout';
+import Signin from './components/Signin';
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
      <BrowserRouter>
       <Routes>
         <Route path='/' element={<DefaultLayout/>}>
-          
+          <Route index element={<Signin/>}/>
         </Route>
       </Routes>
      </BrowserRouter>

@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        openSans: ['Open-sans', 'sans-serif'],
+        openSans: ['Open Sans', 'sans-serif'],
       },
       colors: {
         'primary': "#1E2124 ",
