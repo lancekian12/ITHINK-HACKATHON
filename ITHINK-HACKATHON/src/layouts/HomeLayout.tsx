@@ -1,11 +1,11 @@
 import { Navigation } from "../components/Navigation";
-import { Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
 
 const HomeLayout = () => {
   return (
     <section className="flex">
-      <div className="bg-primary flex-1 h-screen">
-        <Navigation />
+      <Navigation />
+      <div className="h-screen bg-primary flex-1 overflow-y-auto">
         <Outlet />
       </div>
     </section>

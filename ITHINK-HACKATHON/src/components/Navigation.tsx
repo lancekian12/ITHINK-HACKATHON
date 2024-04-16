@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 export const Navigation = () => {
   return (
     <aside
-      className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+      className="w-64 h-screen bg-primary overflow-y-auto border-r-2 border-secondary"
       aria-label="Sidebar"
     >
-      <div className="h-full px-3 py-4 overflow-y-auto bg-primary border-r-2 border-secondary">
+      <div className="h-full px-3 py-4">
         <ul className="space-y-2 font-openSans">
           <li>
             <img
@@ -17,7 +17,7 @@ export const Navigation = () => {
           </li>
           <li>
             <NavLink
-              to="/home"
+              to="/profile"
               className="flex items-center p-2 hover:bg-secondary group"
             >
               <i className="fa-solid fa-user text-secondary flex-shrink-0 w-5 h-5 group-hover:text-primary"></i>
@@ -26,14 +26,13 @@ export const Navigation = () => {
               </span>
             </NavLink>
           </li>
-
           <li>
             <NavLink
-              to="/home"
+              to="/dashboard"
               className="flex items-center p-2 hover:bg-secondary group"
             >
               <svg
-                className="flex-shrink-0 w-5 h-5 text-secondary  group-hover:text-primary"
+                className="flex-shrink-0 w-5 h-5 text-secondary group-hover:text-primary"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -48,7 +47,7 @@ export const Navigation = () => {
           </li>
           <li>
             <NavLink
-              to="/home"
+              to="/challenges"
               className="flex items-center p-2 hover:bg-secondary group"
             >
               <i className="fa-solid fa-list-check text-secondary flex-shrink-0 w-5 h-5 group-hover:text-primary"></i>
@@ -59,7 +58,7 @@ export const Navigation = () => {
           </li>
           <li>
             <NavLink
-              to="/home"
+              to="/logout"
               className="flex items-center p-2 hover:bg-secondary group"
             >
               <i className="fa-solid fa-right-from-bracket text-secondary flex-shrink-0 w-5 h-5 group-hover:text-primary"></i>
@@ -70,7 +69,6 @@ export const Navigation = () => {
           </li>
         </ul>
       </div>
-      <div className="text-center text-red-500">weashndkah</div>
     </aside>
   );
 };

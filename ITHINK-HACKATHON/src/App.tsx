@@ -7,6 +7,7 @@ import Warning from './components/Warning';
 import Error from './components/Error';
 import Success from './components/Success';
 import HomeLayout from './layouts/HomeLayout';
+import DashBoard from './pages/DashBoard';
 
 function App() {
 
@@ -21,8 +22,9 @@ function App() {
           <Route path="Error" element={<Error/>}/>
           <Route path="Success" element={<Success/>}/>
         </Route>
-        <Route path="/home" element={<HomeLayout/>}>
-          <Route/>
+        <Route path="/dashboard" element={<HomeLayout/>}>
+          <Route index element={<DashBoard/>}/>
+          <Route />
         </Route>
       </Routes>
      </BrowserRouter>
