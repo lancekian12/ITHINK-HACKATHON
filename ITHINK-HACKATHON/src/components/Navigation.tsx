@@ -23,8 +23,8 @@ export const Navigation = () => {
           <li>
             <NavLink
               to="profile"
-              className="flex items-center p-2 hover:bg-secondary group"
-            >
+              className={`flex items-center p-2 hover:bg-secondary group`}
+              >
               <i className="fa-solid fa-user text-secondary flex-shrink-0 w-5 h-5 group-hover:text-primary"></i>
               <span className="flex-1 ms-3 whitespace-nowrap text-accent group-hover:text-primary">
                 Lance Kian Flores
@@ -64,7 +64,7 @@ export const Navigation = () => {
           <li>
             <NavLink
               to="/logout"
-              className="flex items-center p-2 hover:bg-secondary group"
+              className="flex items-center p-2 hover:bg-secondary group "
             >
               <i className="fa-solid fa-right-from-bracket text-secondary flex-shrink-0 w-5 h-5 group-hover:text-primary"></i>
               <span className="flex-1 ms-3 whitespace-nowrap text-accent group-hover:text-primary">

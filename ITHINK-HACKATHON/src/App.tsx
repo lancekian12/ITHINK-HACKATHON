@@ -9,6 +9,7 @@ import Success from './components/Success';
 import HomeLayout from './layouts/HomeLayout';
 import DashBoard from './pages/DashBoard';
 import Profile from './pages/Profile';
+import Challenges from './pages/Challenges';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/dashboard" element={<HomeLayout/>}>
           <Route index element={<DashBoard/>}/>
           <Route path="profile" element={<Profile/>} />
+          <Route path="challenges" element={<Challenges/>}/>
         </Route>
       </Routes>
      </BrowserRouter>
